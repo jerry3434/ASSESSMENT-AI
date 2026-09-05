@@ -1,0 +1,89 @@
+/* Base Theme */
+.stApp {
+    background-color: #120E1E !important;
+    color: #E2E8F0 !important;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+#MainMenu, footer, header {visibility: hidden;}
+
+/* Login Hero Card */
+.login-hero-card {
+    background: linear-gradient(135deg, #2E1F4D 0%, #170F28 100%);
+    border-radius: 16px;
+    padding: 32px 28px;
+    height: 100%;
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.5);
+}
+
+.hero-feature-item {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #CBD5E1;
+}
+
+/* Styled Full-Width Tabs */
+button[data-baseweb="tab"] {
+    flex-grow: 1 !important;
+    text-align: center !important;
+    justify-content: center !important;
+    background-color: #1C162E !important;
+    border-radius: 10px 10px 0px 0px !important;
+    color: #94A3B8 !important;
+    font-weight: 600 !important;
+    padding: 12px 16px !important;
+    border: 1px solid #2D2447 !important;
+    border-bottom: none !important;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    background-color: #281F42 !important;
+    color: #A78BFA !important;
+    border-bottom: 3px solid #8B5CF6 !important;
+}
+
+/* Metric Display Fixes (Prevents truncation) */
+div[data-testid="stMetric"] {
+    background-color: #1E1733 !important;
+    border: 1px solid #332754 !important;
+    border-radius: 12px !important;
+    padding: 12px 16px !important;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #A78BFA !important;
+    font-size: 22px !important;
+    white-space: nowrap !important;
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #94A3B8 !important;
+    font-size: 12px !important;
+}
+
+/* Input Fields */
+.stTextInput>div>div>input, .stTextArea>div>div>textarea {
+    background-color: #1A142B !important;
+    color: #F8FAFC !important;
+    border: 1px solid #362A5A !important;
+    border-radius: 8px !important;
+}
+
+/* Primary Accent Button */
+div.stButton > button[kind="primary"] {
+    background: linear-gradient(90deg, #7C3AED 0%, #6D28D9 100%) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    width: 100%;
+}
